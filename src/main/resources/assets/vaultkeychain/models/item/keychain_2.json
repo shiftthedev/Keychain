@@ -1,6 +1,6 @@
 {
   "parent": "vaultkeychain:item/keychain",
   "textures": {
-    "layer0": "vaultkeychain:item/keychain_b"
+    "layer0": "vaultkeychain:item/keychain_2"
   }
 }
