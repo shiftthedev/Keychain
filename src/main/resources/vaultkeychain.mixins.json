@@ -1,0 +1,16 @@
+{
+  "required" : true,
+  "minVersion" : "0.8",
+  "package" : "com.shiftthedev.vaultkeychain.mixins",
+  "compatibilityLevel" : "JAVA_8",
+  "refmap" : "vaultkeychain.refmap.json",
+  "mixins" : [
+    "InventoryMixin",
+    "TreasureDoorMixin"
+  ],
+  "injectors" : {
+    "defaultRequire" : 1
+  },
+  "client" : [
+  ]
+}

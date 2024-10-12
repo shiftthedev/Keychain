@@ -1,0 +1,21 @@
+{
+  "item.vaultkeychain.keychain": "Keychain",
+
+  "key.categories.vaultkeychain": "Vault Keychain",
+  "key.vaultkeychain.showkeychain": "Open Keychain",
+
+  "tooltip.vaultkeychain.info": "Stores a stack of each type of Treasure Key.",
+  "tooltip.vaultkeychain.empty": "Empty",
+  "tooltip.vaultkeychain.ashium": "%s Ashium key(s)",
+  "tooltip.vaultkeychain.bomignite": "%s Bomignite key(s)",
+  "tooltip.vaultkeychain.gorginite": "%s Gorginite key(s)",
+  "tooltip.vaultkeychain.iskallium": "%s Iskallium key(s)",
+  "tooltip.vaultkeychain.petzanite": "%s Petzanite key(s)",
+  "tooltip.vaultkeychain.sparkletine": "%s Sparkletine key(s)",
+  "tooltip.vaultkeychain.tubium": "%s Tubium key(s)",
+  "tooltip.vaultkeychain.upaline": "%s Upaline key(s)",
+  "tooltip.vaultkeychain.xenium": "%s Xenium key(s)",
+  
+  "configs.vaultkeychain.pickup.name": "Pickup",
+  "configs.vaultkeychain.soulbound.tooltip": "Enable / Disable the possibility to auto pickup keys to the keychain."
+}

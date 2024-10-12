@@ -1,0 +1,41 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "vaultkeychain:item/keychain"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+  "overrides": [
+    {
+      "predicate": {
+        "keys": 1
+      },
+      "model": "vaultkeychain:item/keychain_1"
+    },
+    {
+      "predicate": {
+        "keys": 2
+      },
+      "model": "vaultkeychain:item/keychain_2"
+    },
+    {
+      "predicate": {
+        "keys": 3
+      },
+      "model": "vaultkeychain:item/keychain_3"
+    }
+  ]
+}

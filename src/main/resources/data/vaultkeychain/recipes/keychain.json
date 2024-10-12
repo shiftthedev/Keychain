@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " n ",
+    "nkn",
+    " n "
+  ],
+  "key": {
+    "n": {
+      "item": "minecraft:iron_nugget"
+    },
+    "k": {
+      "item": "the_vault:key_mould"
+    }
+  },
+  "result": {
+    "item": "vaultkeychain:keychain",
+    "count": 1
+  }
+}
