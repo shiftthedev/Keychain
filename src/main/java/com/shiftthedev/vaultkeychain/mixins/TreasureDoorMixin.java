@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(value = TreasureDoorBlock.class, remap = false)
+@Mixin(value = TreasureDoorBlock.class)
 public abstract class TreasureDoorMixin extends DoorBlock
 {
     public TreasureDoorMixin(Properties p_52737_)
