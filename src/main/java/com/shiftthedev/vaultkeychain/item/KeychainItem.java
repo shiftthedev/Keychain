@@ -49,6 +49,11 @@ public class KeychainItem extends Item
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand)
     {
+        if (!player.isCrouching())
+        {
+            return super.use(level, player, hand);
+        }
+
         ItemStack stack = player.getItemInHand(hand);
         if (!level.isClientSide && player instanceof ServerPlayer)
         {
@@ -99,15 +104,15 @@ public class KeychainItem extends Item
         tooltip.add(new TextComponent(""));
 
         ItemStack[] keys = getKeys(stack);
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".ashium", keys[0].getCount()).withStyle(Style.EMPTY.withColor(23014742)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".bomignite", keys[1].getCount()).withStyle(Style.EMPTY.withColor(67128226)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".gorginite", keys[2].getCount()).withStyle(Style.EMPTY.withColor(19229118)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".iskallium", keys[3].getCount()).withStyle(Style.EMPTY.withColor(1071713)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".petzanite", keys[4].getCount()).withStyle(Style.EMPTY.withColor(132246191)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".sparkletine", keys[5].getCount()).withStyle(Style.EMPTY.withColor(1931675)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".tubium", keys[6].getCount()).withStyle(Style.EMPTY.withColor(13777)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".upaline", keys[7].getCount()).withStyle(Style.EMPTY.withColor(251232248)));
-        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".xenium", keys[8].getCount()).withStyle(Style.EMPTY.withColor(8866161)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".ashium", keys[0].getCount()).withStyle(Style.EMPTY.withColor(14512657)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".bomignite", keys[1].getCount()).withStyle(Style.EMPTY.withColor(4423906)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".gorginite", keys[2].getCount()).withStyle(Style.EMPTY.withColor(13508215)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".iskallium", keys[3].getCount()).withStyle(Style.EMPTY.withColor(8564995)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".petzanite", keys[4].getCount()).withStyle(Style.EMPTY.withColor(8846274)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".sparkletine", keys[5].getCount()).withStyle(Style.EMPTY.withColor(13220357)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".tubium", keys[6].getCount()).withStyle(Style.EMPTY.withColor(39512)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".upaline", keys[7].getCount()).withStyle(Style.EMPTY.withColor(13343165)));
+        tooltip.add(new TranslatableComponent("tooltip." + MOD_ID + ".xenium", keys[8].getCount()).withStyle(Style.EMPTY.withColor(4141457)));
 
         tooltip.add(new TextComponent(""));
     }

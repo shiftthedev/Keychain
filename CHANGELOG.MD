@@ -1,5 +1,5 @@
-# 1.0.0
-## New
-    Added Keychain
-    Added keybind to open gui
-    Added auto-pickup keys (can be disabled)
+# 1.0.1
+## Changes
+    Changed opening keychain to required player to be crouching
+    Changed tooltip color to match key
+    Updated keychain model

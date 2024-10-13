@@ -1,6 +1,7 @@
 package com.shiftthedev.vaultkeychain.events;
 
 import com.shiftthedev.vaultkeychain.VKRegistry;
+import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.event.RegistryEvent;
